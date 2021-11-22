@@ -27,7 +27,7 @@
     <Navbar />
     <div class="main-content">
       <div class="grid gap-4 xs:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3">
-        <div ></div>
+        <div></div>
         <div class="center-column">
           <router-view></router-view>
         </div>

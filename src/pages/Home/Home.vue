@@ -55,13 +55,13 @@
 
 @media (max-width: 768px) {
   .home-content .my-name {
-   font-size: 40px;
+    font-size: 40px;
   }
 }
 
 @media (max-width: 425px) {
   .home-content .my-name {
-   font-size: 20px;
+    font-size: 20px;
   }
   .specialization {
     font-size: 12px;
@@ -71,7 +71,7 @@
     width: 6.8rem;
     img {
       width: 4rem;
-      height: 4rem  ;
+      height: 4rem;
     }
   }
 }

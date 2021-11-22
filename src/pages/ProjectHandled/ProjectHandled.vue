@@ -183,7 +183,7 @@
   }
 
   .author-profile img {
-   // min-height: 108px;
+    // min-height: 108px;
     height: 300px;
 
     -o-object-fit: cover;
@@ -310,7 +310,7 @@
   }
 
   .button_carousel-prev,
-  .button_carousel-next{
+  .button_carousel-next {
     z-index: 2;
     position: relative;
     img {
@@ -334,15 +334,15 @@
       <div class="grid grid-cols-2 gap-4">
         <div v-for="(proj, index) in projects" :key="index">
           <div class="max-w-sm cursor-pointer m-5" v-for="p in proj" :key="p.projectName">
-            <img class="w-full hover:shadow-2xl rounded-xl" :src="p.displayImg" @click="selectedProject = p"/>
-            <div class="cursor-default">{{p.projectName}}</div>
+            <img class="w-full hover:shadow-2xl rounded-xl" :src="p.displayImg" @click="selectedProject = p" />
+            <div class="cursor-default">{{ p.projectName }}</div>
           </div>
           <!--<div class="max-w-sm cursor-pointer m-5">
             <img class="w-full hover:shadow-2xl rounded-xl" src="@/assets/coursemaker/course maker.png" />
             <div class="cursor-default">CourseMaker</div>
           </div>-->
         </div>
-       <!-- <div>
+        <!-- <div>
           <div class="max-w-sm cursor-pointer m-5">
             <img class="w-full hover:shadow-2xl rounded-xl" src="@/assets/tothemast/Home Admin.png" />
             <div class="cursor-default">ToTheMast</div>
@@ -355,44 +355,53 @@
       </div>
     </template>
     <template v-else>
-      <div class="flex items-center" >
+      <div class="flex items-center">
         <span @click="selectedProject = null" class="cursor-pointer"> Project </span>
         <svg viewBox="0 0 24 24" focusable="false" class="greater-than-icon">
           <path fill="currentColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
         </svg>
         <div class="project-title">{{ selectedProject.projectName }}</div>
       </div>
-      <div class="project-description" >
-        {{ selectedProject.description}}
+      <div class="project-description">
+        {{ selectedProject.description }}
       </div>
 
-      <div class="stack-used flex pt-5" >
+      <div class="stack-used flex pt-5">
         <p class="p-1">STACK</p>
         <div class="pl-2">
           <span> VUE TYPESCRIPT </span>
         </div>
       </div>
-      <div class="project-imgs mt-10" >
+      <div class="project-imgs mt-10">
         <span> Use mouse wheel to zoom </span>
         <section
-            class="wrapper_carousel flex flex-col justify-center w-full xs:w-90"
-            role="region"
-            aria-label="testimonial carousel"
+          class="wrapper_carousel flex flex-col justify-center w-full xs:w-90"
+          role="region"
+          aria-label="testimonial carousel"
         >
           <div class="carousel-data relative overflow-hidden flex items-center justify-center w-full mt-8 mb-8">
             <button type="button" class="button_carousel-prev" aria-label="previous" @click="moveBack">
               <!--<i class="fas fa-caret-left"></i>-->
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAvUlEQVRoge3ZwQqCUBRF0U0fmBWFg/r3oMACP8HABjYIew28Du7hcRY49mzUgQpmVdsDD6AHjslbwlpgAMbP0efOiZlHjMAzdVFAKWIADpmjljrxG/ECzpmjlnKECkeocIQKR6hwhApHqHCEiioidpRfitrMURF3xCI2mSdXUM2tBdP3p9LDfskcFeUYVY5R5RhVjlHlGFWOUeUYVVXF/PsZ2mSOiirF3FIXrTCP6XLnrNMAV6arsU3eYvbtDV2c58xqHOMTAAAAAElFTkSuQmCC"/>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAvUlEQVRoge3ZwQqCUBRF0U0fmBWFg/r3oMACP8HABjYIew28Du7hcRY49mzUgQpmVdsDD6AHjslbwlpgAMbP0efOiZlHjMAzdVFAKWIADpmjljrxG/ECzpmjlnKECkeocIQKR6hwhApHqHCEiioidpRfitrMURF3xCI2mSdXUM2tBdP3p9LDfskcFeUYVY5R5RhVjlHlGFWOUeUYVVXF/PsZ2mSOiirF3FIXrTCP6XLnrNMAV6arsU3eYvbtDV2c58xqHOMTAAAAAElFTkSuQmCC"
+              />
             </button>
-            <div class="carousel-item" role="group" :aria-label="`slide ${index + 1} of ${selectedProject.imgs.length}`"
-                 v-for="(projectImgs, index) in selectedProject.imgs" :key="`${projectImgs}-${index}`">
+            <div
+              class="carousel-item"
+              role="group"
+              :aria-label="`slide ${index + 1} of ${selectedProject.imgs.length}`"
+              v-for="(projectImgs, index) in selectedProject.imgs"
+              :key="`${projectImgs}-${index}`"
+            >
               <div class="author-profile zoom">
                 <img :src="getImage(projectImgs)" />
               </div>
             </div>
             <button type="button" class="button_carousel-next ml-1" aria-label="next" @click="moveForward">
               <!-- <i class="fas fa-caret-right"></i>-->
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAA7UlEQVR4nO3bMUpEMRgA4Q9BOxsPZK+9jReyU/AKgoUI6lWsrbyGwlooiLjauLzgZgbShn8GAu8FQkTE39nHGa5xOHiWIVxh9bFecDJ2nOV58hlgyggXvgaYLsIe7nyP8IrTgXMtShEUAUVAEVAEFAFFQBFQBBQBRQC7ilAEioAioAgoAoqAIqAIKALeP5sfrL9yPx4416L8FOFxE5vvbGKTQaxGD7AEvx2Bo4FzLcLUv83JSz755CWf/FaTvOTnlL+XfPLJSz75rSZ5ySefvEnk4dL6q+tpHkw8m1gebk0sDwc4x41Jn81FxP/kDWS2PLaLFh00AAAAAElFTkSuQmCC"/>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAA7UlEQVR4nO3bMUpEMRgA4Q9BOxsPZK+9jReyU/AKgoUI6lWsrbyGwlooiLjauLzgZgbShn8GAu8FQkTE39nHGa5xOHiWIVxh9bFecDJ2nOV58hlgyggXvgaYLsIe7nyP8IrTgXMtShEUAUVAEVAEFAFFQBFQBBQBRQC7ilAEioAioAgoAoqAIqAIKALeP5sfrL9yPx4416L8FOFxE5vvbGKTQaxGD7AEvx2Bo4FzLcLUv83JSz755CWf/FaTvOTnlL+XfPLJSz75rSZ5ySefvEnk4dL6q+tpHkw8m1gebk0sDwc4x41Jn81FxP/kDWS2PLaLFh00AAAAAElFTkSuQmCC"
+              />
             </button>
           </div>
 
@@ -411,7 +420,6 @@
         </section>
       </div>
     </template>
-
   </div>
 </template>
 
@@ -425,13 +433,14 @@ export default {
         [
           {
             projectName: 'Kasina',
-            description: 'HRIS software used automates HR activities, such as employee leaves, attendance, and etc. It also have list of upcoming events and newsfeed for the other activities.',
+            description:
+              'HRIS software used automates HR activities, such as employee leaves, attendance, and etc. It also have list of upcoming events and newsfeed for the other activities.',
             displayImg: require('@/assets/kasina/kasina.jpg'),
             imgs: ['/kasina/kasina.jpg'],
           },
           {
             projectName: 'ToTheMast',
-            description: "",
+            description: '',
             displayImg: require('@/assets/tothemast/Home Admin.png'),
             imgs: ['/tothemast/Home Admin.png', '/tothemast/Edit Article.png', '/tothemast/Article_1.png'],
           },
@@ -439,34 +448,33 @@ export default {
         [
           {
             projectName: 'CourseMaker',
-            description: "",
+            description: '',
             displayImg: require('@/assets/coursemaker/course maker.png'),
             imgs: ['/coursemaker/course maker.png'],
           },
           {
             projectName: 'Injoy',
-            description: "",
+            description: '',
             displayImg: require('@/assets/injoy/injoy1.png'),
             imgs: ['/injoy/injoy1.png'],
           },
-        ]
+        ],
       ],
       position: 0,
-      indicatorButtons: []
+      indicatorButtons: [],
     };
   },
   mounted() {
-    const zoomElement = document.querySelector(".zoom");
+    const zoomElement = document.querySelector('.zoom');
     let zoom = 1;
     const ZOOM_SPEED = 0.1;
 
-    document.addEventListener("wheel", function(e) {
-
-      if(e.deltaY > 0){
-        zoomElement.style.transform = `scale(${zoom += ZOOM_SPEED})`;
-      }else{
-        zoomElement.style.transform = `scale(${zoom -= ZOOM_SPEED})`;  }
-
+    document.addEventListener('wheel', function (e) {
+      if (e.deltaY > 0) {
+        zoomElement.style.transform = `scale(${(zoom += ZOOM_SPEED)})`;
+      } else {
+        zoomElement.style.transform = `scale(${(zoom -= ZOOM_SPEED)})`;
+      }
     });
     this.initialSlide();
     this.setIndicators();
@@ -486,8 +494,8 @@ export default {
       return require(`@/assets${img}`);
     },
     initialSlide() {
-      if(!this.selectedProject){
-        return false
+      if (!this.selectedProject) {
+        return false;
       }
       let position = 0;
       const slides = document.querySelectorAll('.carousel-item');
