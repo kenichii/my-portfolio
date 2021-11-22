@@ -131,7 +131,7 @@
       </span>
     </div>
 
-    <div class="content-body mt-5 about-me">
+    <div class="content-body mt-10 about-me">
       <div class="header-title">Social Media</div>
       <span class="flex pt-2">
         <img class="h-5 w-5" src="@/assets/013-facebook.svg" />
