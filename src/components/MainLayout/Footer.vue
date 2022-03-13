@@ -94,18 +94,21 @@
         </div>
       </div>
       <div class="footer__col4">
-         <div class="text-left">
+        <div class="text-left">
           <h1 class="col-title">Social Links</h1>
           <div class="col2__links grid">
-           <a href="https://www.facebook.com/KENlCHl/" class="text-indent-0 pl-2 flex items-center">
-            <img class="h-10 w-5 mr-2" src="@/assets/013-facebook.svg" />
-            @KENICHI
+            <a href="https://www.facebook.com/KENlCHl/" class="text-indent-0 pl-2 flex items-center">
+              <img class="h-10 w-5 mr-2" src="@/assets/013-facebook.svg" />
+              @KENICHI
             </a>
             <a href="https://www.facebook.com/KENlCHl/" class="text-indent-0 pl-2 flex mt-5 items-center">
               <img class="h-6 w-6 mr-2" src="@/assets/014-instagram.svg" />
               @HEY_KENICHI
             </a>
-             <a href="https://www.linkedin.com/in/kenneth-reyes-270939174/" class="text-indent-0 pl-2 flex mt-5 items-center">
+            <a
+              href="https://www.linkedin.com/in/kenneth-reyes-270939174/"
+              class="text-indent-0 pl-2 flex mt-5 items-center"
+            >
               <img class="h-7 w-7 mr-1" src="@/assets/linkedin.svg" />
               @LinkedIn
             </a>
@@ -115,12 +118,7 @@
     </div>
     <div class="copyright">
       <div class="container">
-        <!-- <PText>
-            © 2021 - Ayan Khan | Designed By{' '}
-            <a target="_blank" rel="noreferrer" href="http://webcifar.com">
-              web cifar
-            </a>{' '}
-          </PText> -->
+        <p>© 2021 - Kenneth Reyes</p>
       </div>
     </div>
   </div>
