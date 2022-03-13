@@ -91,7 +91,7 @@
           <h2 class="about__heading">A freelance/full-time fullstack software engineer</h2>
           <div class="about__info">
             <p class="description">
-              I im from San Fernando Pampanga, Philippines. I love playing sports and also a varsity and one of the
+              I am from San Fernando Pampanga, Philippines. I love playing sports and also a varsity and one of the
               player that represents our school in terms of sports and programming. I also love coaching with other
               players and traveling with my love ones.
               <br />

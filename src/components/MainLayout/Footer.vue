@@ -87,7 +87,7 @@
         <div class="text-left">
           <h1 class="col-title">Contact Info</h1>
           <div class="col2__links grid">
-            <p>+63-965-3415-455</p>
+            <p>+639 653415455</p>
             <p>reyeskenichi@gmail.com</p>
             <p>San Fernando Pampanga, Philippines</p>
           </div>
