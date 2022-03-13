@@ -175,7 +175,7 @@
         <span class="hero__name">Kenneth Reyes</span>
       </h1>
       <div class="hero__img">
-        <img src="@/assets/mee.jpg" alt="" />
+        <img src="@/assets/other/me.jpg" />
       </div>
       <div class="hero__info">
         <p class="text-white">

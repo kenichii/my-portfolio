@@ -164,7 +164,7 @@ export default {
         'AWS',
         'ChartJS',
         'Ant Design',
-        'Bootstrap'
+        'Bootstrap',
       ],
     };
   },

@@ -112,13 +112,13 @@
       </div>
       <div class="aboutSection__right flex">
         <div class="img-content flex items-center">
-          <img src="@/assets/me.jpg" class="rounded-full" alt="" />
+          <img src="@/assets/other/me.jpg" class="rounded-full" />
         </div>
         <div class="img-content flex items-center">
-          <img src="@/assets/me4.jpg" class="rounded-full" alt="" />
+          <img src="@/assets/other/me4.jpg" class="rounded-full" />
         </div>
         <div class="img-content flex items-center">
-          <img src="@/assets/me5.jpg" class="rounded-full" alt="" />
+          <img src="@/assets/other/me5.jpg" class="rounded-full" />
         </div>
 
         <!-- <img className="aboutImg" src="{AboutImg}" alt="Img" /> -->
