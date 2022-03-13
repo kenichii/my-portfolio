@@ -199,6 +199,10 @@
       .projectItem__img {
         width: 100%;
       }
+
+      .container {
+        min-width: 320px !important;
+      }
     }
 
     .main-card .cards .card {

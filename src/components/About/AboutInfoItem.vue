@@ -38,6 +38,12 @@
     .title {
       font-size: 2rem;
     }
+
+    .is-grid-item {
+      display: grid;
+      grid-template-columns: auto auto;
+      margin: 0;
+    }
   }
 }
 </style>

@@ -117,7 +117,7 @@
         </div>
         <div class="about__info__item">
           <h1 class="about__info__heading">My Skills</h1>
-          <AboutInfoItem title="FrontEnd" :items="frontEnd" />
+          <AboutInfoItem title="FrontEnd" :items="frontEnd" :isGrid="true" />
           <AboutInfoItem title="BackEnd" :items="backEnd" />
           <AboutInfoItem title="Database" :items="database" />
           <AboutInfoItem title="Others" :items="others" :isGrid="true" />
