@@ -162,7 +162,7 @@
           <MdClose />
         </div> -->
       <li>
-        <router-link to="/home" @click="showNav = !showNav">Home</router-link>
+        <router-link to="/" @click="showNav = !showNav">Home</router-link>
       </li>
       <li>
         <router-link to="/about" href="#">About</router-link>
