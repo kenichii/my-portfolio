@@ -120,7 +120,7 @@
           <AboutInfoItem title="FrontEnd" :items="frontEnd" :isGrid="true" />
           <AboutInfoItem title="BackEnd" :items="backEnd" />
           <AboutInfoItem title="Database" :items="database" />
-          <AboutInfoItem title="Others" :items="others" :isGrid="true" />
+          <AboutInfoItem title="Others" :items="others" :isGrid="true" :isMt10="true" />
         </div>
         <!-- <div className="about__info__item">
           <h1 className="about__info__heading">Experiences</h1>

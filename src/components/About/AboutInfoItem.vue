@@ -24,7 +24,9 @@
   .is-grid-item {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    margin-top: 10rem;
+    &.is-mt-10 {
+      margin-top: 10rem;
+    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -50,7 +52,7 @@
 <template>
   <div class="about__info_item flex">
     <h1 class="title">{{ title }}</h1>
-    <div class="items flex ml-5" :class="`${isGrid ? 'is-grid-item' : ''}`">
+    <div class="items flex ml-5" :class="`${isGrid ? `is-grid-item ${isMt10 ? 'is-mt-10' : ''}` : ''}`">
       <div class="item" v-for="(item, index) in items" :key="index">
         <p class="mx-2">{{ item }}</p>
       </div>
@@ -63,6 +65,7 @@ export default {
     items: Array,
     title: String,
     isGrid: Boolean,
+    isMt10: Boolean,
   },
 };
 </script>
