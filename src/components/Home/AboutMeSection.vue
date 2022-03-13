@@ -17,12 +17,12 @@
     .img-content {
       margin: 10px;
       img {
-        opacity: 60%;
+        opacity: 0.6;
         height: 75%;
         transition: all 0.4s ease;
 
         &:hover {
-          opacity: 90%;
+          opacity: 0.9;
           transform: translateY(-15px);
         }
       }

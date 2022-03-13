@@ -28,7 +28,7 @@
   }
 }
 .hero__img {
-  opacity: 30%;
+  opacity: 0.3;
   z-index: 1;
   //max-width: 900px;
   max-width: 400px;
@@ -39,7 +39,7 @@
 }
 
 .hero__img img {
-  opacity: 80%;
+  opacity: 0.8;
   filter: brightness(80%);
 }
 .hero__info {
