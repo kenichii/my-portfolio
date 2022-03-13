@@ -12,7 +12,7 @@
     flex: 3;
   }
   .right {
-    flex: 2;
+    // flex: 2;
   }
   .about__subheading {
     font-size: 2.2rem;
@@ -106,9 +106,9 @@
           </div>
           <a href="/files/Kenneth-Reyes-(CV).pdf" download class="download_pdf">Download CV</a>
         </div>
-        <!-- <div className="right">
-              <img src={AboutImg} alt="me" />
-            </div> -->
+        <div class="right">
+          <img src="@/assets/other/me6.jpg" alt="me" />
+        </div>
       </div>
       <div class="about__info__items">
         <div class="about__info__item">
