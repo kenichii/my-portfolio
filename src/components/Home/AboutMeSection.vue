@@ -17,9 +17,9 @@
     .img-content {
       margin: 10px;
       img {
+        opacity: 60%;
         height: 75%;
         transition: all 0.4s ease;
-        opacity: 60%;
 
         &:hover {
           opacity: 90%;
@@ -112,16 +112,14 @@
       </div>
       <div class="aboutSection__right flex">
         <div class="img-content flex items-center">
-          <img src="@/assets/other/img-1.jpg" class="rounded-full" alt="" />
+          <img src="@/assets/other/img-1.jpg" class="rounded-full" alt="Img" />
         </div>
         <div class="img-content flex items-center">
-          <img src="@/assets/other/img-2.jpg" class="rounded-full" alt="" />
+          <img src="@/assets/other/img-2.jpg" class="rounded-full" alt="Img" />
         </div>
         <div class="img-content flex items-center">
-          <img src="@/assets/other/img-3.jpg" class="rounded-full" alt="" />
+          <img src="@/assets/other/img-3.jpg" class="rounded-full" alt="Img" />
         </div>
-
-        <!-- <img className="aboutImg" src="{AboutImg}" alt="Img" /> -->
       </div>
     </div>
   </div>

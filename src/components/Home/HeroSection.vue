@@ -28,19 +28,19 @@
   }
 }
 .hero__img {
+  opacity: 30%;
   z-index: 1;
   //max-width: 900px;
-  opacity: 30%;
   max-width: 400px;
   width: 100%;
   height: 500px;
   margin: 0 auto;
   border: 2px solid var(--gray-1);
+}
 
-  img {
-    filter: brightness(80%);
-    opacity: 80%;
-  }
+.hero__img img {
+  opacity: 80%;
+  filter: brightness(80%);
 }
 .hero__info {
   margin-top: -30rem;
