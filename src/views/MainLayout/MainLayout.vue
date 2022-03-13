@@ -1,6 +1,9 @@
 <style lang="scss">
 .main-content {
   margin-top: 15px;
+  .bcontent {
+    grid-template-columns: 25% 50% !important;
+  }
 }
 
 .center-column {
@@ -26,23 +29,21 @@
   <div class="main-layout">
     <Navbar />
     <div class="main-content">
-      <div class="grid gap-4 xs:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3">
-        <div></div>
-        <div class="center-column">
-          <router-view></router-view>
-        </div>
-        <div></div>
-      </div>
+      <router-view></router-view>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/MainLayout/Navbar';
+import Footer from '@/components/MainLayout/Footer';
+
 export default {
   name: 'MainLayout',
   components: {
     Navbar,
+    Footer,
   },
 };
 </script>

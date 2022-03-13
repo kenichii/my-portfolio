@@ -367,12 +367,13 @@
       </div>
 
       <div class="stack-used flex pt-5">
-        <p class="p-1">STACK</p>
+        <p class="p-1">STACKS USED:</p>
         <div class="pl-2">
           <span> VUE TYPESCRIPT </span>
         </div>
       </div>
-      <div class="project-imgs mt-10">
+      <ImageSlider />
+      <!-- <div class="project-imgs mt-10">
         <span> Use mouse wheel to zoom </span>
         <section
           class="wrapper_carousel flex flex-col justify-center w-full xs:w-90"
@@ -381,7 +382,6 @@
         >
           <div class="carousel-data relative overflow-hidden flex items-center justify-center w-full mt-8 mb-8">
             <button type="button" class="button_carousel-prev" aria-label="previous" @click="moveBack">
-              <!--<i class="fas fa-caret-left"></i>-->
               <img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAvUlEQVRoge3ZwQqCUBRF0U0fmBWFg/r3oMACP8HABjYIew28Du7hcRY49mzUgQpmVdsDD6AHjslbwlpgAMbP0efOiZlHjMAzdVFAKWIADpmjljrxG/ECzpmjlnKECkeocIQKR6hwhApHqHCEiioidpRfitrMURF3xCI2mSdXUM2tBdP3p9LDfskcFeUYVY5R5RhVjlHlGFWOUeUYVVXF/PsZ2mSOiirF3FIXrTCP6XLnrNMAV6arsU3eYvbtDV2c58xqHOMTAAAAAElFTkSuQmCC"
               />
@@ -398,7 +398,6 @@
               </div>
             </div>
             <button type="button" class="button_carousel-next ml-1" aria-label="next" @click="moveForward">
-              <!-- <i class="fas fa-caret-right"></i>-->
               <img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAA7UlEQVR4nO3bMUpEMRgA4Q9BOxsPZK+9jReyU/AKgoUI6lWsrbyGwlooiLjauLzgZgbShn8GAu8FQkTE39nHGa5xOHiWIVxh9bFecDJ2nOV58hlgyggXvgaYLsIe7nyP8IrTgXMtShEUAUVAEVAEFAFFQBFQBBQBRQC7ilAEioAioAgoAoqAIqAIKALeP5sfrL9yPx4416L8FOFxE5vvbGKTQaxGD7AEvx2Bo4FzLcLUv83JSz755CWf/FaTvOTnlL+XfPLJSz75rSZ5ySefvEnk4dL6q+tpHkw8m1gebk0sDwc4x41Jn81FxP/kDWS2PLaLFh00AAAAAElFTkSuQmCC"
               />
@@ -406,26 +405,20 @@
           </div>
 
           <div class="carousel-indicators pt-2 flex items-center"></div>
-
-          <!--<div class="carousel-controls flex justify-end" aria-label="carousel controls">
-            <button type="button" class="button_carousel-prev" aria-label="previous" @click="moveBack">
-              &lt;!&ndash;<i class="fas fa-caret-left"></i>&ndash;&gt;
-              ‹
-            </button>
-            <button type="button" class="button_carousel-next ml-1" aria-label="next" @click="moveForward">
-             &lt;!&ndash; <i class="fas fa-caret-right"></i>&ndash;&gt;
-              ›
-            </button>
-          </div>-->
         </section>
-      </div>
+      </div> -->
     </template>
   </div>
 </template>
 
 <script>
+import ImageSlider from '../../components/shared/image-slider.vue';
+
 export default {
   name: 'ProjectHandled',
+  components: {
+    ImageSlider,
+  },
   data() {
     return {
       selectedProject: null,
